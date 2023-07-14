@@ -1,0 +1,40 @@
+{
+    "Report": [
+        {
+            "organization": "A",
+            "repository": "Project A1",
+            "codeCoverage": 54.0,
+            "staticCodeAnalysis": 100,
+            "scanningTool": "SkyScanner"
+        },
+        {
+            "organization": "A",
+            "repository": "Project A2",
+            "codeCoverage": 90.0,
+            "staticCodeAnalysis": 10,
+            "scanningTool": "ScannerPro"
+        },
+        {
+            "organization": "C",
+            "repository": "Project C1",
+            "codeCoverage": null,
+            "staticCodeAnalysis": null,
+            "scanningTool": null
+        },
+        {
+            "organization": "B",
+            "repository": "Project B1",
+            "codeCoverage": 20.0,
+            "staticCodeAnalysis": 1000,
+            "scanningTool": "Detect"
+        },
+        {
+            "organization": "B",
+            "repository": "Project B2",
+            "codeCoverage": 75.0,
+            "staticCodeAnalysis": 75,
+            "scanningTool": "Source"
+        }
+    ]
+}
+
