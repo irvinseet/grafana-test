@@ -22,5 +22,5 @@ docker run -d -p 3000:3000 --name=grafana --volume grafana-storage:/var/lib/graf
 - grafana/grafana-enterprise: The recommended and default edition of Grafana is Grafana Enterprise. It is free and includes all the features of the OSS edition.
 
 4. Go to http://localhost:3000/. Username/password should be admin/admin
-5. Create a dashboard and import template (if available)
+5. Create a dashboard and import template dashboard (if available)
 6. Connect datasource to API
