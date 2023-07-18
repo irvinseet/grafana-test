@@ -26,5 +26,6 @@ docker run -d -p 3000:3000 --name=grafana --volume grafana-storage:/var/lib/graf
 6. Connect datasource to API
 
 ### More Information
+- Grafana Docker Image - https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
 - Grafana JSON API - https://grafana.github.io/grafana-json-datasource/
 - JSONPath syntax - https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html
