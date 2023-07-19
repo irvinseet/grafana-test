@@ -39,7 +39,7 @@ grafana/grafana
 
 ### More Information
 - Grafana Docker Image - https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
-- Grafana Infinity Datasource plugin -https://sriramajeyam.com/grafana-infinity-datasource/
+- Grafana Infinity Datasource plugin - https://sriramajeyam.com/grafana-infinity-datasource/
 - UQL and JSONata - https://sriramajeyam.com/grafana-infinity-datasource/wiki/uql
 - Grafana JSON API plugin - https://grafana.github.io/grafana-json-datasource/
 - JSONPath syntax - https://support.smartbear.com/alertsite/docs/monitors/api/endpoint/jsonpath.html
