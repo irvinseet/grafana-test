@@ -14,12 +14,10 @@ docker volume inspect grafana-storage
 
 3) Start grafana
 ```
-docker run  \
--d  \
--p 3000:3000 \
---name=grafana \
+docker run  -d  -p 3000:3000 --name=grafana\
 --volume grafana-storage:/var/lib/grafana \
 -e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource, marcusolsson-json-datasource" \
+-e "GF_AUTH_ANONYMOUS_ENABLED=true" \
 grafana/grafana
 ```
 - `docker run`: run a container from a Docker image.
