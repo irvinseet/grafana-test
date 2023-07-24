@@ -12,7 +12,7 @@ docker volume create grafana-storage
 docker volume inspect grafana-storage
 ```
 
-3) Start grafana
+3a) Start grafana
 ```
 docker run  -d  -p 3000:3000 --name=grafana \
 --volume grafana-storage:/var/lib/grafana \
@@ -27,6 +27,8 @@ grafana/grafana
 - `-e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource, marcusolsson-json-datasource"`: installs latest versions of Infinity Datasource plugin and JSON API plugin. You may specify the version, for example `marcusolsson-json-datasource 1.3.3`
 - `-e "GF_AUTH_ANONYMOUS_ENABLED=true"`: Allows anonymous to view dashboard without logging in.
 - `grafana/grafana`: You may specify the version, for example `grafana/grafana:8.2.6`
+
+3b) Alternatively, run `docker compose up -d` in the same folder as docker-compose.yaml
 
 ### Grafana configuration
 1) Go to http://localhost:3000/. Username/password should be admin/admin
