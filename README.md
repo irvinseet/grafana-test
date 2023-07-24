@@ -33,9 +33,8 @@ grafana/grafana
 ### Grafana configuration
 1) Go to http://localhost:3000/. Username/password should be admin/admin
 2) Press side menu button on top right corner (☰) > Connections > Add new data source
-    - Select JSON API, set URL to  `http://172.17.0.1:8080/report.json`, > Save & Test
     - Select Infinity, > Save and Test
-3) Create a dashboard and import template.json dashboard, select respective data sources.
+3) Create a dashboard and import template.json dashboard
 4) (if necessary) For panels using Infinity data source, set URL to `http://172.17.0.1:8080/report.json`
 
 ### More Information
