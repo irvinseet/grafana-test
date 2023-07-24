@@ -24,7 +24,7 @@ grafana/grafana
 - `-d`: container to run in detached mode, meaning it runs in the background.
 - `-p 3000:3000`: binds port 3000 of the host machine to port 3000 of the container. Grafana's web interface is accessible on port 3000.
 - `--volume grafana-storage:/var/lib/grafana`: create a volume named "grafana-storage" and mounts it to the /var/lib/grafana directory inside the container. The volume provides persistent storage for Grafana's data.
-- `-e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource"`: installs latest versions of Infinity Datasource plugin. You may specify the version, for example `yesoreyeram-infinity-datasource x.x`
+- `-e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource"`: installs latest versions of Infinity Datasource plugin. You may specify the version, for example `-e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource x.x"`
 - `-e "GF_AUTH_ANONYMOUS_ENABLED=true"`: Allows anonymous to view dashboard without logging in.
 - `grafana/grafana`: You may specify the version, for example `grafana/grafana:8.2.6`
 
