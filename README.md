@@ -14,7 +14,7 @@ docker volume inspect grafana-storage
 
 3) Start grafana
 ```
-docker run  -d  -p 3000:3000 --name=grafana\
+docker run  -d  -p 3000:3000 --name=grafana \
 --volume grafana-storage:/var/lib/grafana \
 -e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource, marcusolsson-json-datasource" \
 -e "GF_AUTH_ANONYMOUS_ENABLED=true" \
@@ -25,6 +25,7 @@ grafana/grafana
 - `-p 3000:3000`: binds port 3000 of the host machine to port 3000 of the container. Grafana's web interface is accessible on port 3000.
 - `--volume grafana-storage:/var/lib/grafana`: create a volume named "grafana-storage" and mounts it to the /var/lib/grafana directory inside the container. The volume provides persistent storage for Grafana's data.
 - `-e "GF_INSTALL_PLUGINS=yesoreyeram-infinity-datasource, marcusolsson-json-datasource"`: installs latest versions of Infinity Datasource plugin and JSON API plugin. You may specify the version, for example `marcusolsson-json-datasource 1.3.3`
+- `-e "GF_AUTH_ANONYMOUS_ENABLED=true"`: Allows anonymous to view dashboard without logging in.
 - `grafana/grafana`: You may specify the version, for example `grafana/grafana:8.2.6`
 
 ### Grafana configuration
