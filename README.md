@@ -41,3 +41,7 @@ grafana/grafana
 - Grafana Docker Image - https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
 - Grafana Infinity Datasource plugin - https://sriramajeyam.com/grafana-infinity-datasource/
 - UQL and JSONata - https://sriramajeyam.com/grafana-infinity-datasource/wiki/uql
+
+Next steps
+- Dashboard provisioning https://superuser.com/questions/1477291/grafana-provisioning-dashboards-in-docker
+- historical data for accumulated metrics
